@@ -19,14 +19,20 @@ namespace TarefasApp.API.Controllers
             return Ok();
         }
 
-        [HttpDelete]
-        public IActionResult Delete()
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
         {
             return Ok();
         }
 
         [HttpGet]
         public IActionResult GetAll()
+        {
+            return Ok();
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
         {
             return Ok();
         }
